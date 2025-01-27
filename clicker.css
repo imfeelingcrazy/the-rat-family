@@ -1,1 +1,48 @@
+.base {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.button-ex {
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px #999;
+    width: 75px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.button-ex:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+p.money {
+    margin: 0;
+    font-family: cursive;
+}
+
+.doubleButton {
+    background-color: green;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px #999;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.doubleButton:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
