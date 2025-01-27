@@ -1,15 +1,14 @@
 .base {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: fixed;       /* Fixed positioning to keep it centered even when scrolling */
+    top: 50%;              /* Position it halfway from the top */
+    left: 50%;             /* Position it halfway from the left */
+    transform: translate(-50%, -50%); /* Adjust the element to truly center it */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 75px; /* Match the width of the button to ensure alignment */
 }
 
 .button-ex {
@@ -17,7 +16,7 @@
     color: white;
     text-align: center;
     box-shadow: 0 5px #999;
-    width: 75px;
+    width: 75px;   /* Set the width of the button */
     height: 30px;
     margin-bottom: 10px;
 }
@@ -32,17 +31,26 @@ p.money {
     font-family: cursive;
 }
 
-.doubleButton {
-    background-color: green;
-    color: white;
+.upgrades {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 200px;    /* Distance from the bottom of the screen */
+    left: 50%;        /* Centers the container horizontally */
+    transform: translateX(-50%); /* Adjusts for centering */
+    width: 75px;      /* Set width to match the button */
     text-align: center;
-    box-shadow: 0 5px #999;
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
 }
 
-.doubleButton:active {
+#doubleButton {
+    width: 75px;   /* Ensure it matches the width of the base button */
+    height: 30px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: 0 5px #999;
+}
+
+#doubleButton:active {
     box-shadow: 0 2px #666;
     transform: translateY(4px);
 }
