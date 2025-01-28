@@ -26,14 +26,15 @@
     transform: translateY(4px);
 }
 
-p.money {
+p.profit {
     margin: 0;
     font-family: cursive;
+    border: 5px;
 }
 
 .upgrades {
     position: fixed;
-    top: 60%;
+    top: 61%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -44,7 +45,7 @@ p.money {
     width: 75px;
 }
 
-#doubleButton {
+#repButton {
     width: 75px;
     height: 30px;
     margin: 10px;
@@ -54,7 +55,11 @@ p.money {
     box-shadow: 0 5px #999;
 }
 
-#doubleButton:active {
+#repButton:active {
     box-shadow: 0 2px #666;
     transform: translateY(4px);
+}
+
+.chester {
+    position: fixed;
 }
