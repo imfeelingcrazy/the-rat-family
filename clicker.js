@@ -11,24 +11,24 @@ function increment() {
     countElement.textContent = count
 
     if (count === 1) {
-        showDoubleButton();
+        showRepButton();
     }
 }
 
-function showDoubleButton() {
-    const doubleButton = document.getElementById("doubleButton");
-    doubleButton.style.display = "block";
+function showRepButton() {
+    const repButton = document.getElementById("repButton");
+    repButton.style.display = "block";
 }
 
-function doubleClick() {
+function repUp() {
     if (gamble() >= 8) {
         incrementValue *= 2;
-        alert("The value of extortion has now doubled! It is now worth " + incrementValue + " money per click!")
-        doubleButton.style.display = "none";
+        alert("Your reputation in the family has increased! You now extort for " + incrementValue + " 2 profit!");
+        repButton.style.display = "none";
     }
     else {
         count = 0;
         countElement.textContent = count
-        doubleButton.style.display = "none";
+        repButton.style.display = "none";
     }
 }
