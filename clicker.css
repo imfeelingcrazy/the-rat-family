@@ -1,14 +1,14 @@
 .base {
-    position: fixed;       /* Fixed positioning to keep it centered even when scrolling */
-    top: 50%;              /* Position it halfway from the top */
-    left: 50%;             /* Position it halfway from the left */
-    transform: translate(-50%, -50%); /* Adjust the element to truly center it */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75px; /* Match the width of the button to ensure alignment */
+    width: 75px;
 }
 
 .button-ex {
@@ -16,7 +16,7 @@
     color: white;
     text-align: center;
     box-shadow: 0 5px #999;
-    width: 75px;   /* Set the width of the button */
+    width: 75px;
     height: 30px;
     margin-bottom: 10px;
 }
@@ -32,16 +32,20 @@ p.money {
 }
 
 .upgrades {
-    position: fixed; /* Fixes the position relative to the viewport */
-    bottom: 200px;    /* Distance from the bottom of the screen */
-    left: 50%;        /* Centers the container horizontally */
-    transform: translateX(-50%); /* Adjusts for centering */
-    width: 75px;      /* Set width to match the button */
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
 }
 
 #doubleButton {
-    width: 75px;   /* Ensure it matches the width of the base button */
+    width: 75px;
     height: 30px;
     margin: 10px;
     background-color: red;
