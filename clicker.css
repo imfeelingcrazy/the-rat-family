@@ -1,7 +1,7 @@
 .base {
     position: fixed;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
@@ -35,7 +35,7 @@ p.profit {
 .upgrades {
     position: fixed;
     top: 61%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
@@ -62,9 +62,8 @@ p.profit {
 
 .chester {
     position: fixed;
-    bottom: -3500;
-    right: -5000;
-    width: 1500px; /* Adjust as needed for the desired size */
+    bottom: 0;
+    right: 0;
+    width: 300px; /* Keep large size */
     height: auto;
-    
 }
