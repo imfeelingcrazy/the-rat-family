@@ -12,4 +12,21 @@ const cheeseCount = document.getElementById('cheese-count');
 extort_button.addEventListener('click', function() {
     cheese += 1;
     cheeseCount.textContent = cheese;
+    displayUpgrade();
+});
+
+const upgradeButtons = document.querySelectorAll('.upgrade');
+function displayUpgrade() {
+    upgradeButtons.forEach(button => {
+        const threshold = parseInt(button.getAttribute('cheese-threshold'));
+        if (cheese >= threshold) {
+            button.style.display = 'inline-block';
+        }
+    });
+}
+upgradeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert(`Purchased: ${button.textContent}`);
+        button.style.display = 'none';
+    });
 });
