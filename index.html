@@ -1,43 +1,44 @@
-    <html>
-        <head>
-            <title>The Rat Family</title>
-            <link rel="stylesheet" href="clicker.css">
-        </head>
+        <html>
+            <head>
+                <title>The Rat Family</title>
+                <link rel="stylesheet" href="clicker.css">
+            </head>
 
-        <body>
-            <div id="intro-screen">
-                <h1>Welcome to the Rat Family</h1>
-                <p>Press any key or click to continue</p>
-            </div>
+            <body>
+                <div id="intro-screen">
+                    <h1>It is not just any rat that can join our Family.</h1>
+                    <p>You must first prove yourself to us. Prove your worth.</p>
+                    <p>We will consider you an <b>associate</b> for now. You may work for us, under us. But you are not a member of the Family. Not yet.
+                </div>
 
-            <div class="extort-wrapper" style="position: relative; display: flex; flex-direction: column; align-items: center;">
-    
-                <div class="extort-container">
+                <div id="prestige1-screen" style="display:none;">
+                    <p>It is no ordinary rat that can run a succsesful lemonade stand and a booming pizzeria. it takes dedication, resillience. Passion.</p>
+                    <p>You've done well. No longer are you a mere associate. You're something more now. A <b>made man</b>.</p>
+                    <h1>Welcome to the Family.</h1>
+                </div>
+
+                <div class="extort-wrapper" style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        
+                    <div class="extort-container">
+                        <button type="button" id="extort">Extort</button>
+                        <p>cheese: <span id="cheese-count">0</span></p>
+                    </div>
+
+                    <button type="button" id="prestige1">Prestige</button>
+
                     <img src="mafia-rat.png" id="chester">
-                    <button type="button" id="extort">Extort</button>
-                    <p>cheese: <span id="cheese-count">0</span></p>
+                    <img src="chester_p1.png" id="chester_p1" style="display: none;">
+                    <img src="lemonade.png" id="lemonrat" style="display: none;">
+                    <img src="pizza rat.png" id="pizzarat" style="display: none;">
+
+                    <div class="upgrades-grid">
+                        <button id="lemonade" class="upgrade" cheese-threshold="1" style="display:none;" title="Turns out animals love lemonade. Who knew?">Lemonade Stand - 50 Cheese</button>
+                        <button id="pizza" class="upgrade" cheese-threshold="1" style="display: none;" title="No, it's actually just a legitamete pizzeria">Pizzeria - 100 cheese</button>
+                    </div>
+
                 </div>
 
-                <div class="upgrades-grid">
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                    <button id="lemonade" class="upgrade" cheese-threshold="10" style="display:none;">Lemonade Stand - 50 Cheese</button>
-                </div>
-
-            </div>
-
-            <script src="clicker.js"></script>
-        </body>
-    </html>
+                <audio id="upgrade-sound" src="yippee.mp3" preload="auto"></audio>
+                <script src="clicker.js"></script>
+            </body>
+        </html>
