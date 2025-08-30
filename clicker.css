@@ -24,6 +24,7 @@ body {
     align-items: center;
     gap: 5px;
     position: relative;
+    z-index: 2;
 }
 
 .extort-container p {
@@ -38,6 +39,33 @@ body {
     width: 100px;
     height: 100px;
 }
+#chester_p1 {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+
+#lemonrat {
+    position: fixed;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-170%);
+    width: 150px;
+    height: 125px;
+}
+
+#pizzarat {
+    position: fixed;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(70%);
+    width: 150px;
+    height: 125px;
+}
 
 #extort {
     background-color: gray;
@@ -47,10 +75,33 @@ body {
     font-size: 15px;
     padding: 5px 10px;
 }
-
-#extort:active{
-    background-color: rgb(64, 64, 64);
+#extort:hover {
+    background-color: rgb(106, 106, 106);
 }
+#extort:active{
+    background-color: rgb(88, 88, 88);
+}
+#extort.hidden {
+    visibility: hidden;
+}
+
+#prestige1 {
+    position: absolute;
+    top: 30%;                    
+    left: 50%;                   
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    z-index: 10;
+    display: none;
+}
+#prestige1:hover {
+    background-color: rgb(220, 0, 0);
+}
+
 
 .upgrades-grid {
     position: absolute;
@@ -74,17 +125,43 @@ body {
     padding: 5px 10px;
 }
 
-.upgrade:active {
-    background-color: darkgreen;
-}
-
 #lemonade {
     background-color: yellow;
     color: black;
     font-size: 12px;
 }
+#lemonade:hover {
+    background-color: rgb(240, 240, 2);
+}
+
+#pizza {
+    background-color: rgb(255, 175, 27);
+    color: black;
+    font-size: 12px;
+}
+#pizza:hover {
+    background-color: rgb(255, 189, 68);
+}
 
 #intro-screen {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 10px;
+    z-index: 1000;
+
+}
+
+#prestige1-screen {
     background-color: black;
     position: fixed;
     top: 0;
