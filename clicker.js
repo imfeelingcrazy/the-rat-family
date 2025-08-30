@@ -26,7 +26,6 @@ function displayUpgrade() {
 }
 upgradeButtons.forEach(button => {
     button.addEventListener('click', function() {
-        alert(`Purchased: ${button.textContent}`);
         button.style.display = 'none';
     });
 });
