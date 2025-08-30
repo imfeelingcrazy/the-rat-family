@@ -16,14 +16,34 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    position: relative;
 }
 
 .button-container p {
-    margin: 0;
+    margin: 0px;
 }
 
-#button {
-    background-color: pink;
+#chester {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+#extort {
+    background-color: gray;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px 10px;
+    
+}
+
+#extort:active{
+    background-color: rgb(64, 64, 64);
 }
 
 #intro-screen {
