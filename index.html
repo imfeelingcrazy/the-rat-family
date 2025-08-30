@@ -1,28 +1,20 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
     <head>
-        <script src="clicker.js"></script>
+        <title>The Rat Family</title>
         <link rel="stylesheet" href="clicker.css">
     </head>
 
     <body>
+        <div id="intro-screen">
+            <h1>Welcome to the Rat Family</h1>
+            <p>Press any key or click to continue</p>
+        </div>
 
-    <img src="mafia-rat-fixed.png" class="chester">
+        <div class="button-container">
+            <button type="button" id="button">yippee</button>
+        </div>
 
-    <!-- container for the extort button and the money varible -->
-    <div class = "base">
-    <button type="button" class = "button-ex" id = "incre" onclick="increment()">Extort</button>
-    <p class = "profit">
-        <span>Profit: </span>
-        <span id = "count">0</span>
-    </p>
-    </div>
-
-    <!-- container for upgrades underneath the base class -->
-    <div class = "upgrades">
-    <button type="button" id="repButton" style="display: none;" onclick="repUp()">Reputation</button>
-    <button tpye="button" id="pps" style="display:none;" onclick="moreProf()">1PPS</button>
-    </div>
-
+        <script src="clicker.js"></script>
     </body>
-    </html>
+</html>
