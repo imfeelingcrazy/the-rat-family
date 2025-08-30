@@ -22,7 +22,7 @@ function checkPrestige() {
     const extortButton = document.getElementById('extort');
     const prestige1 = document.getElementById('prestige1');
 
-    const prestige1Threshold = 50;
+    const prestige1Threshold = 200;
     if (cheese >= prestige1Threshold && !reachPres1 && upgradePurchased['lemonade'] && upgradePurchased['pizza']) {
         extortButton.style.display = 'none';
         prestige1.style.display = 'block';
